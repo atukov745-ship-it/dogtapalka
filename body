@@ -1,0 +1,17 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: var(--tg-theme-bg-color, #ffffff); /* Подстраивается под тему Telegram */
+    color: var(--tg-theme-text-color, #000000);
+    padding-top: 50px;
+}
+#tap-btn {
+    font-size: 24px;
+    padding: 20px 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--tg-theme-button-color, #3390ec);
+    color: var(--tg-theme-button-text-color, #ffffff);
+    cursor: pointer;
+    user-select: none; /* Чтобы текст не выделялся при быстром тапе */
+}
