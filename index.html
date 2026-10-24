@@ -1,20 +1,27 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моя Тапалка</title>
-    <!-- Подключаем официальный скрипт Telegram -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Тапалка-Собака</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Привет, <span id="username">игрок</span>!</h1>
-    <button id="tap-btn">Тапнуть</button>
-    <p>Счет: <span id="score">0</span></p>
+    <div class="container">
+        <h1>Привет, <span id="username">игрок</span>!</h1>
+        <p class="score-display">Счет: <span id="score">0</span></p>
+        <p class="level-display">Уровень: <span id="level">1</span></p>
+        <p class="hint">До следующего уровня: <span id="to-next">5000</span> тапов</p>
 
+        <div class="dog-wrapper">
+            <button id="tap-btn" aria-label="Тапнуть собаку">
+                <span class="dog-emoji">🐶</span>
+            </button>
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
-
  
